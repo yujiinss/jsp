@@ -7,6 +7,5 @@
 
 <c:redirect url="/list.jsp"/>
 
-
 </body>
 </html>

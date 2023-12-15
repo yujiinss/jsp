@@ -17,6 +17,11 @@
 	a:hover {
 		text-decoration: none;
 	}
+	.sb{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
 	.frame {
 		width: 900px;
 		margin: 0 auto;
@@ -60,7 +65,20 @@
 	font-family: 'NanumGothic';
 	
 	}
-	
+    .frame> nav > button{
+    border-color: black;
+    border-radius: 25px;
+    background-color: white;
+    text-align: right;
+    width: 450px;
+    margin-left: -450px;
+    margin-top: 20px;"
+   }
+   img{
+    border-radius: 25px;
+   }
+ 
+
 	</style>
 </head>
 <body>
@@ -74,5 +92,9 @@
 			<li><a href="${cpath }/list.jsp?category=만화">만화</a></li>
 			<li><a href="${cpath }/list.jsp?category=요리">요리</a></li>
 		</ul>
+		
+		   <button><div>🔍</div></button>
 	</nav>
+	
+
 </header>
