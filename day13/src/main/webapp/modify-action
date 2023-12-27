@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="header.jsp" %>
-<jsp:useBean id="login" class="your.package.LoginBean" scope="session"/>
-<jsp:setProperty property="*" name="login"/>
 
-<c:set var="row" value="${dao.updateUser(login)}" />
+<jsp:useBean id="dto" class="member.MemberDTO"/>
+<jsp:setProperty property="*" name="dto"/>
+
+<c:set var="row" value="${dao.updateUser(dto)}" scope="session" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
 <body>
 
 <h3>${row != 0 ? '수정 성공' : '수정 실패'}</h3>
-<a href="${login.jsp?userId=${login.userId}"><button>로그인 페이지</button></a>
+<a href="login.jsp?userId=${login.userId}"><button>로그인 페이지</button></a>
 
 </body>
 </html>
