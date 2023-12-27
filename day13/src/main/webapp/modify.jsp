@@ -11,7 +11,7 @@
 
 <c:if test="${not empty sessionScope.user}">
 <h2>안녕, ${sessionScope.user}!</h2>
-<form action="logout-action.jsp" method="post">
+<form action="modify-action.jsp" method="post">
 <input type="submit" value="로그아웃">
 </form>
 </c:if>
