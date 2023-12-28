@@ -11,5 +11,10 @@
 <c:redirect url="list.jsp"/>
 </c:if>
 
+<script>
+	alert('가입이 처리되지 않았습니다')
+	history.go(-1)
+</script>
+
 </body>
 </html>

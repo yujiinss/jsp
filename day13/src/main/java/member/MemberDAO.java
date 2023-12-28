@@ -77,6 +77,29 @@ public class MemberDAO {
 		return list;
 	}
 	
+	// selectOne
+	public MemberDTO selectOne(String userId) {
+		MemberDTO dto = null;
+		String sql ="select * from member where userId =?";
+		try {
+			conn = ds.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userId);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				dto = mapping(rs);
+			}
+		}catch(Exception e) {
+			
+		}finally {
+			close();
+		}
+		
+		return dto;
+		
+	}
+	
+	
 	// 로그인 
 	public MemberDTO login(String userId, String userPw) {
 		MemberDTO dto = null;

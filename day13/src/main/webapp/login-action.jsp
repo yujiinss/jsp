@@ -10,5 +10,9 @@
 	<c:redirect url="list.jsp"/>
 </c:if>
 
+<script>
+	alert('계정 혹은 패스워드가 일치하지 않습니다')
+	history.go(-1)
+</script>
 </body>
 </html>

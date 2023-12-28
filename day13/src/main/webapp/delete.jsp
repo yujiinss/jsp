@@ -9,8 +9,12 @@
 </head>
 <body>
 
-<c:set var ="row" value="${dao.delete(param.idx) }"/>
-<c:redirect url="list.jsp"/>
+<c:set var ="row" value="${dao.delete(login.userId) }" />
+
+<c:if test="${row != 0 }">
+ <% session.removeAttribute("login");%>
+ <c:redirect url="list.jsp"/>
+</c:if>
 
 </body>
 </html>

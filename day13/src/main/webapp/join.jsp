@@ -11,15 +11,19 @@
 
 <section>
 <form action="join-action.jsp" method="POST">
-<input type ="text" name="userId" placeholder="아이디">
-<input type ="password" name="userPw" placeholder="비밀번호">
-<input type ="text" name="userName" placeholder="사용이름">
-<input type ="text" name="email" placeholder="이메일">
 
-<label><input type="radio" name="gender" value="여성">여성</label>
-<label><input type="radio" name="gender"  value="남성">남성</label>
-<p><input type="submit" value="로그인"></p>
-
+	<p><input type ="text" name="userId" placeholder="아이디"></p>
+	<p><input type ="password" name="userPw" placeholder="비밀번호"></p>
+	<p><input type ="text" name="userName" placeholder="사용이름"></p>
+	
+	<p>
+	<label><input type="radio" name="gender" value="여성">여성</label>
+	<label><input type="radio" name="gender"  value="남성">남성</label>
+	</p>
+	
+	<p><input type ="text" name="email" placeholder="이메일"></p>
+	<p><input type="submit" value="가입 신청"></p>
+	
 </form>
 
 </section>
