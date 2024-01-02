@@ -1,0 +1,23 @@
+Eclipse IDE for Enterprise Java and Web Developers
+이클립스 JEE(Enterprise Edition) 2022-03 압축 다운로드 및 해제
+워크스페이스 새로 지정
+이클립스 환경 설정
+
+- general > workspace > text file encoding > other: UTF-8
+- general > web browser > use external: Chrome
+- server > runtime environments > add > tomcat 9.0
+- web > CSS Files > Encoding: UTF-8
+- web > HTML Files > Encoding: UTF-8
+- web > JSP Files > Encoding: UTF-8
+- java > compiler > compiler compliance level: 11
+- java > installed JREs > 기본값 삭제 후 자바 추가하기
+apply and close
+
+
+아파치 톰캣 다운로드 (9.0)
+zip파일로 받아서 압축해제
+환경 변수 설정: CATALINA_HOME
+톰캣 실행을 확인한 후
+톰캣 경로를 복사해서 환경변수에 새로 등록하기
+환경변수 등록이 올바르게 되었다면
+실행창에서 catalina start 명령으로 실행할 수 있어야 한다

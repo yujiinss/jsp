@@ -1,0 +1,23 @@
+2023-12-13
+
+공통 주제로 CRUD 프로그램 만들기
+주제 : 유튜브 영상 클립
+
+컬럼
+- idx					number	default sequence.nextval primary key
+- 영상 타이틀				varchar2
+- 채널 이름				varchar2
+- 영상 썸네일 (그림파일 주소)			varchar2
+- 영상 태그 (iframe 태그, textarea)	varchar2
+
+썸네일 : https://i.ytimg.com/vi/NB90IFoHMps/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDL-C_-kN8cziFar-vP8LEhh1i7A
+
+영상 태그 : <iframe width="848" height="477" src="https://www.youtube.com/embed/NB90IFoHMps" title="[#무도] 휴게소 음식은 못 참지🤤 &#39;얼큰이 칼국수 vs 김치 버섯 라면&#39; 명수의 선택으로 갈리는 준하와 멤버들의 희비ㅋㅋ &#39;여섯이 네고향&#39; 2편 MBC130622방송" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+<img src="https://i.ytimg.com/vi/NB90IFoHMps/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDL-C_-kN8cziFar-vP8LEhh1i7A">
+
+<iframe width="848" height="477" src="https://www.youtube.com/embed/NB90IFoHMps" title="[#무도] 휴게소 음식은 못 참지🤤 &#39;얼큰이 칼국수 vs 김치 버섯 라면&#39; 명수의 선택으로 갈리는 준하와 멤버들의 희비ㅋㅋ &#39;여섯이 네고향&#39; 2편 MBC130622방송" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

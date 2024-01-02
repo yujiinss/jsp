@@ -1,0 +1,24 @@
+\TEST1
+\---src
+    \---main
+        +---java		// 자바 파일을 배치하는 폴더
+        |   +---ex03			// 패키지
+        |   |       Ex03DAO.java
+        |   |
+        |   \---test2			// 패키지
+        |           Test2.java
+        |
+        \---webapp		// 웹 문서 및 자원을 배치하는 폴더
+            |   ex01.jsp
+            |   ex02.jsp
+            |   ex03.jsp
+            |   test1.jsp
+            |
+            +---META-INF	// 설정 폴더 1 (xml을 통한 컨테이너 내부 객체 생성에 활용됨)
+            |       MANIFEST.MF
+            |
+            \---WEB-INF		// 설정 폴더 2 (웹 프로젝트 설정 및 라이브러리 배치)
+                |   web.xml
+                |
+                \---lib			// 라이브러리 폴더, 사용할 라이브러리 파일 배치만 하면 자동 포함된다
+                        ojdbc8-23.2.0.0.jar

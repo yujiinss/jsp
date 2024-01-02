@@ -1,0 +1,18 @@
+1) 데이터 모델링 - 테이블을 작성하고, DTO를 작성하세요
+TABLE : MEMBER
+- USERID 	(500, PK)
+- USERPW 	(500, NOT NULL)
+- USERNAME	(500, NOT NULL)
+- GENDER	(100, check in ('남성', '여성'))
+- EMAIL		(100, NOT NULL)
+
+2) 기능 구상 - 각 action 페이지는 POST로 처리
+- 회원가입	join.jsp, join-action.jsp	insert
+- 회원목록	list.jsp			select
+- 로그인		login.jsp, login-action.jsp	select
+- 정보수정	modify.jsp, modify-action.jsp	update
+- 탈퇴		delete.jsp			delete
+- 로그아웃	logout.jsp			-
+
+3) 기능에 필요한 DAO를 작성 (EL, JSTL, DBCP, Singleton)
+4) header.jsp 를 작성한 후, 2번에서 구상한 기능을 실제로 구현
