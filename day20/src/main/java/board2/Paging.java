@@ -24,8 +24,8 @@ public class Paging {
 		this.page = page;
 		this.boardCount = boardCount;
 		
-		offset = (page - 1) * 10;
-		perPage = 10;
+		offset = (page - 1) * perPage;
+		perPage = 15;
 		fetch = perPage;
 		
 		pageCount = boardCount/ perPage;
