@@ -133,7 +133,7 @@ public class BoardDAO {
 				rs = pstmt.executeQuery();
 				while(rs.next()) {
 					dto = mapping(rs);
-					dto.setIpaddr(maskIPaddr(dto.getIpaddr()));
+					//dto.setIpaddr(maskIPaddr(dto.getIpaddr()));
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -237,12 +237,41 @@ public class BoardDAO {
 		}
 		
 		// 조회수 세기
-//		public int totalView(int viewCount) {
-//			int viewcount =0;
-//			String sql=" ";
-//			return viewcount;
-//		}
+		public int totalView(int idx) {
+			int row =0;
+		    String sql = "update board2 set viewCount = viewCount + 1 where idx = ?";
+		    try {
+		        conn = ds.getConnection();
+		        pstmt = conn.prepareStatement(sql);
+		        pstmt.setInt(1, idx);
+		        row = pstmt.executeUpdate();
+		    } catch (SQLException e) {
+		        e.printStackTrace();
+		        return 0; 
+		    } finally {
+		        close();
+		    }
+		    return row;
+		}
 		
-	
 		
+		// 게시물 수정
+		public int modifyPost(BoardDTO dto) {
+			int row =0;
+			String sql="update board2 set title = ? and content =? where idx =?";
+			try {
+				conn = ds.getConnection();
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, dto.getTitle());
+				pstmt.setString(2, dto.getContent());;
+				pstmt.setInt(3, dto.getIdx());
+				row = pstmt.executeUpdate();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}finally {
+				close();
+			}
+			return row;
+		}
+			
 }

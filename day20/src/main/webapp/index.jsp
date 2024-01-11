@@ -47,7 +47,9 @@
 	</a>
 </td>
 <td>${dto.writer }</td>
-<td>${dto.viewCount }</td>
+<td>
+<c:set var="row" value="${boardDAO.totalView(param.idx)}" />${row 
+}</td>
 <td>${dto.writeDate }</td>
 </tr>
 </c:forEach>

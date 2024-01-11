@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'ChosunGs';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0; 
+}
+header {
+    height: auto;
+}
+.chosungs {
+    font-family: 'ChosunGs' !important;
+}
+
+#index-main-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+#main-container {
+    position: relative;
+    width: 100%;
+}
+
+#main-video {
+    width: 100%;
+
+}
+
+.nav-overlay {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    height: max-content;
+}
+
+.image-210 {
+    width: 80px;
+    height: auto;
+}
+.nav {
+    padding: 0 70px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'ChosunGs';
+    padding: 9px 20px;
+}
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'ChosunGs';
+    padding: 9px 20px;
+}
+.header-nav a:hover {
+    color: green;
+}
+.header-nav .history{
+    color: green;
+}
+.header-nav .history:hover {
+    color: #5EA672;
+}
+
+.img154ho {
+    margin-top: auto;
+    position: sticky;
+    left: 87%;
+    position: absolute;
+    top: 70px;
+}
+
+.image-211 {
+    height: 220px;
+    width: 105%;
+}
+.main-text {
+    margin-top: -43%;
+    margin-left: 10%;
+    font-family: 'ChosunGs';
+    font-size: 60px;
+    line-height: 80px;
+    color: white;
+}
+.main-menu {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0% 10% 60px;
+    display: flex;
+}
+.home-sect {
+    width: 300px;
+    height: 100px;
+}
+.main-menu01-line{
+    border-top: 1px solid white;
+    margin-top: 30px;
+}
+.main-menu01-content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 15px;
+}
+.main-menu01-content-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 15px;
+}
+.font-white {
+    color: white;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.image-78 {
+    width: 40%;
+    margin-right: 12px;
+    display: block;
+}
+.text20px {
+    font-size: 20px;
+}
+.home-sect_1 {
+    width: 200px;
+    margin-left: 22px;
+}
+.main-menu01-content-icon {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.image-77{
+    margin-top: 10px;
+    width: 40%;
+    display: block;
+}
+.main-menu02 {
+    top:-39px;
+    position: relative;
+}
+#section1 {
+    height: auto;
+    background-color: #eee;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-top: 98px;
+    display: flex;
+}
+.section1-top-img  {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.image-213 {
+    width: auto;
+    height: 1100px;
+    margin-left: 425px;
+    margin-right: auto;
+}
+.section1-area {
+    width: 1000px;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    display: flex;
+    margin-left: 425px;
+}
+.section1-area-btn {
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+    background-clip: border-box;
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    text-decoration-line: none;
+}
+.section2 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: block;
+    background-color: white;
+}
+.section2-top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+    display: flex;
+}
+.section2-top-texttop {
+    color: #111;
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+}
+.section2-top-textmid {
+    color: #111;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.section2-top-textbot {
+    color: grey;
+}
+
+<!---->
+.signup-form {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 300px;
+text-align: center;
+}
+.signup-form h2 {
+color: #333;
+}
+
+.signup-form input {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+
+.signup-form button {
+background-color: #4caf50;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.signup-form button:hover {
+background-color: #45a049;
+}
+
+

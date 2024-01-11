@@ -39,9 +39,6 @@
 </c:forEach>
 
 
-
-
-
 </table>
 
 

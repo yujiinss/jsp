@@ -5,7 +5,7 @@
 <c:set var="dto" value="${boardDAO.selectOne(param.idx) }"/>
 <div class="menu">
 <div>${dto.idx }  ${dto.title }  ${dto.writer }</div>
-<div>조회수 : ${dto.viewCount }</div>
+<div><c:set var="row" value="${boardDAO.totalView(param.idx) }"/>조회수 : ${row }</div>
 <div>${dto.writeDate }</div>
 <div><img src="reviewImage/${dto.image }"></div>
 <div><pre>${dto.content }</pre></div>
